@@ -55,6 +55,7 @@ class IntrusionDiscovery(object):
         # services enables at various runlevels
         chk_confg = ""
         checkconfig = []
+        # no chkconfig avail on ubuntu
         if self.OS == "ubuntu":
             # chk_confg = subprocess.Popen(['sudo', 'sysv-rc-conf', 'list'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             # out, err = chk_confg.communicate()
